@@ -21,7 +21,7 @@ from sqlite3.dbapi2 import Cursor
 # CREATE TABLE artiste (
 #     artiste_id INTEGER NOT NULL PRIMARY KEY, 
 #     nom VARCHAR);
-
+"ajouter references artiste, pour notifier que cette donnée est partagée dans l'autre tab"
 # CREATE TABLE album (
 #     album_id INTEGER NOT NULL PRIMARY KEY, 
 #     artiste_id INTEGER REFERENCES artiste,
@@ -34,7 +34,7 @@ from sqlite3.dbapi2 import Cursor
 # UPDATE album SET annee_sortie = 1982 WHERE titre = "Thriller";
 
 # DELETE FROM artiste WHERE nom = "Madonna"
-
+"Select : pour consulter ses données"
 # SELECT * FROM artiste
 # SELECT nom FROM artiste
 # SELECT * FROM album WHERE annee_sortie > 1990;

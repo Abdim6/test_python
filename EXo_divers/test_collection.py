@@ -128,12 +128,25 @@ print("Votre score est : ", score)
 
 "boucle"
 
-maCondition=True
-age =0
-while(maCondition):
-    try:
-        age=int(input("Rentrer ton age ? : "))
-        break
-    except :
-        print("Votre votre age correctement svp ? ")
-    print("Ton age est : ", age)
+# maCondition=True
+# age =0
+# while(maCondition):
+#     try:
+#         age=int(input("Rentrer ton age ? : "))
+#         break
+#     except :
+#         print("Votre votre age correctement svp ? ")
+#     print("Ton age est : ", age)
+
+# dico = {"nom" : "abdi", "age":"22", "job":"Informaticien","pays":"France"}
+# for i in dico:
+#     print(dico[i])
+
+x=0
+y =1
+total = 0
+for x in range(100):
+    print(total)
+    x=y
+    y=total
+    total=x+y

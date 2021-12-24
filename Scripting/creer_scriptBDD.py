@@ -6,7 +6,7 @@ import sqlite3
     # "Commit"
     # "fermer"
 
-con=sqlite3.connect("album2.db")
+con=sqlite3.connect("album.db")
 sql_tab_artistes = """CREATE TABLE artistes (
     artiste_id INTEGER NOT NULL PRIMARY KEY, 
     nom VARCHAR,
@@ -54,7 +54,7 @@ Curseur.execute("""INSERT INTO albums
 
 Curseur.execute("""INSERT INTO albums
     (album_id,titre,annee_sortie, nb_disque) VALUES (""" + str(bb_id) + ',"Friday", "2016","2 millions");')
-    
+
 "Le commit nous garantis que les données rentrées soit écrites dans la base de données"
 con.commit()
 con.close()

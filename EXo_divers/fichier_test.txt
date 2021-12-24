@@ -1,0 +1,5 @@
+
+Écrivez un script qui compte dans un fichier texte quelconque le nombre de lignes contenant des caractères numériques.
+Ecrivez un script qui compte le nombre de mots contenus dans un fichier texte.
+Ecrivez un script qui recopie un fichier texte en veillant à ce que chaque ligne commence par une majuscule.
+Abdi
