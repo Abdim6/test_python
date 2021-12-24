@@ -84,3 +84,5 @@ for x in d_dico:
         # print(d_dico[x])
         d_list.append(d_dico[x])
 print(d_list)
+
+"un petit message en plus"
