@@ -30,7 +30,7 @@ print(len(mondico))
 "------"
 "Telechargement d'images"
 "Le but ici est recupérer une image depuis un site, puis l'enregistrer dans un fichier sous forme binaire"
-recup = requests.get("https://codeavecjonathan.com/res/pipillon.jpg")
+recup = requests.get("https://codeavecjonathan.com/res/papillon.jpg")
 mon_image = open("Papillon.jpg","wb")
 
 mon_image.write(recup.content)

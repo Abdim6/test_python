@@ -54,14 +54,14 @@ car2 = [4,9,23,7,0]
 # print(car2_[::-1])
 
 "---- Remplir un dictionnaire ----"
-# mon_dico = dict()
-# x_list = [2,6,0,2,11,6,6,0]
-# for i in x_list:
-#     if i in mon_dico:
-#         mon_dico[i] +=1
-#     else:
-#         mon_dico[i] = 1
-# print(mon_dico)
+mon_dico = dict()
+x_list = [2,6,0,2,11,6,6,0]
+for i in x_list:
+    if i in mon_dico:
+        mon_dico[i] +=1
+    else:
+        mon_dico[i] = 1
+print(mon_dico)
 
 # dico_puissance = dict()
 # tab1 = [2,3,4,6,7,8]
@@ -75,14 +75,62 @@ car2 = [4,9,23,7,0]
         # zip
 
 
-r_list = [1,3,7,98,0]
-d_list = []
-d_dico = {"nono":7,"emma":98,"abdi":1,"jojo":7,"toto":2}
+# r_list = [1,3,7,98,0]
+# d_list = []
+# d_dico = {"nono":7,"emma":98,"abdi":1,"jojo":7,"toto":2}
 
-for x in d_dico:
-    if d_dico[x] not in d_list:
-        # print(d_dico[x])
-        d_list.append(d_dico[x])
-print(d_list)
+# for x in d_dico:
+#     if d_dico[x] not in d_list:
+#         # print(d_dico[x])
+#         d_list.append(d_dico[x])
+# print(d_list)
 
 "un petit message en plus"
+
+# cles = ["un","deux","trois"]
+# valeurs = [1,2,3]
+# dica = dict ()
+
+# for c in range(len(cles)):
+#         # dica[c] = cles[c]
+#         dica[cles[c]] = valeurs[c]
+# print(dica)
+
+# dict1 = {"un":1,"deux":2,"Trois":3}
+# dict2 = {"dix":10,"six":6,"Cinq":5}
+
+# "SOMME DE TABLEAU"
+# som = {**dict1 , **dict2}                       
+# print(som)
+
+# sample_dict = {
+#     "name": "Kelly",
+#     "age": 25,
+#     "salary": 8000,
+#     "city": "New york"}
+
+# keys = [8000, 25]
+
+# extra = dict()
+# for i in keys:
+#         if i in sample_dict:
+#                 extra[i] = sample_dict[i]
+# print(extra)
+
+
+# "Enlever des éléments dans un dictionnaire"
+# sample_dict.pop(i) 
+
+"valeur min d'un dico"
+
+sample_dict = {
+    'Physics': 82,
+    'math': 65,
+    'history': 5
+}
+# m = sample_dict["Physics"]
+# for i in sample_dict:
+#         if sample_dict[i]<m:
+#                 m = sample_dict[i]
+# print(m)
+print(min(sample_dict,key=sample_dict.get))
