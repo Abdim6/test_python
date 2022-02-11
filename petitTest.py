@@ -73,5 +73,12 @@ for i in range(10):
 # print(chr(97))
 
 import math
+import os
 
-print(dir(math.__file__))
+ch = open("ceTest.txt", "w")
+ch.write(math.__file__)
+ch.write("\n")
+
+ch.write(str(dir(math.__file__)))
+ch.close()
+# print(dir(math.__file__))
